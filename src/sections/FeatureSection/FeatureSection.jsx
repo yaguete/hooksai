@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureBox from "../../components/FeatureBox/FeatureBox";
-import "./featureSection.css";
+import "./FeatureSection.css";
 
 const FeatureSection = () => {
   return (
