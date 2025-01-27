@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './howitworks.css';
 import { Box, Tabs, Tab, Typography } from "@mui/material";
+import howitworksDiagram from "../../assets/Images/Who_it_works_diagram.png";
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -82,7 +83,7 @@ const HowItWorks = () => {
 
             <div className="howitworksDiagram">
             <img
-                src="/public/images/Who it works diagram.png"
+                src={howitworksDiagram}
                 alt="How It Works Diagram"
                 style={{
                     maxWidth: '100%',

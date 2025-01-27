@@ -1,37 +1,43 @@
 import React, { useEffect, useRef } from 'react';
 import QuoteCard from '../../components/QuoteCard/QuoteCard';
 import './QuoteSection.css';
+import QuoteRyan from "../../assets/Images/Testimonials/QuoteRyan.png";
+import QuoteJordi from "../../assets/Images/Testimonials/QuoteJordi.png";
+import QuoteAmelia from "../../assets/Images/Testimonials/QuoteAmelia.png";
+import QuoteMarc from "../../assets/Images/Testimonials/QuoteMarc.png";
+import QuoteSarah from "../../assets/Images/Testimonials/QuoteSarah.png";
+
 
 const quotes = [
   {
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     nombre: "Ryan",
     rol: "Architect",
-    avatar: "/public/images/Testimonials/QuoteRyan.png",
+    avatar: QuoteRyan,
   },
   {
     quote: "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     nombre: "Jordi",
     rol: "Contractor",
-    avatar: "/public/images/Testimonials/QuoteJordi.png",
+    avatar: QuoteJordi,
   },
   {
     quote: "Some clients bring in a small image and want it larger. I no longer need to ask them for the original file to enhance it in Photoshop. Now I can fix it right away, right before printing.",
     nombre: "Sarah",
     rol: "Copyshop manager",
-    avatar: "/public/images/Testimonials/QuoteSarah.png",
+    avatar: QuoteSarah,
   },
   {
     quote: " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     nombre: "Amelia",
     rol: "Mechanical Engineer",
-    avatar: "/public/images/Testimonials/QuoteAmelia.png",
+    avatar: QuoteAmelia,
   },
   {
     quote: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     nombre: "Marc",
     rol: "Graphic designer",
-    avatar: "/public/images/Testimonials/QuoteMarc.png",
+    avatar: QuoteMarc,
   },
 ];
 
