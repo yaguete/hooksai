@@ -1,4 +1,4 @@
-import './Home.css';
+import './home.css';
 import React, { useRef } from "react";
 import HeroSection from '../../sections/HeroSection/HeroSection';
 import HowItWorks from '../../sections/howitworks/howitworks';
