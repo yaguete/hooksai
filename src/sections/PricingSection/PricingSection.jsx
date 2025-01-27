@@ -116,7 +116,6 @@ const PricingSection = () => {
                         "&::after": {
                             content: '""',
                             position: "absolute",
-                            bottom: 0,
                             left: "35%",
                             width: "35%",
                             height: "10px",
