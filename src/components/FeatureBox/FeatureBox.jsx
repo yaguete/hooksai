@@ -1,5 +1,5 @@
 import React from "react";
-import "./featureBox.css";
+import "./FeatureBox.css";
 
 const FeatureBox = ({ title, subtitle, image }) => {
   return (
