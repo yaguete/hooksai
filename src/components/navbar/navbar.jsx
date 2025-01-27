@@ -15,6 +15,9 @@ function Navbar() {
     setMobileOpen(!mobileOpen);
   };
 
+  const handleNavLinkClick = () => {
+    setMobileOpen(false); // Cierra el menú
+  };
 
   return (
     <AppBar className="Navbar" 
@@ -46,7 +49,7 @@ function Navbar() {
               Pricing
           </NavLink>
           <NavLink to="/faq" className={({isActive}) => 
-            isActive ? "navbar-button" : "navbar-button text"}>
+            isActive ? "navbar-button text" : "navbar-button text"}>
               FAQ
           </NavLink>
           
@@ -82,15 +85,15 @@ function Navbar() {
           }}
         >
           <NavLink to="/" className={({isActive}) => 
-            isActive ? "navbar-button-drawer text" : "navbar-button-drawer"}>
+            isActive ? "navbar-button-drawer text" : "navbar-button-drawer"} onClick={handleNavLinkClick}>
               Home
           </NavLink>
           <NavLink to="/pricing" className={({isActive}) => 
-            isActive ? "navbar-button-drawer text" : "navbar-button-drawer"}>
+            isActive ? "navbar-button-drawer text" : "navbar-button-drawer"} onClick={handleNavLinkClick}>
               Pricing
           </NavLink>
           <NavLink to="/faq" className={({isActive}) => 
-            isActive ? "navbar-button-drawer text" : "navbar-button-drawer"}>
+            isActive ? "navbar-button-drawer text" : "navbar-button-drawer"} onClick={handleNavLinkClick}>
               FAQ
           </NavLink>
         </Box>
