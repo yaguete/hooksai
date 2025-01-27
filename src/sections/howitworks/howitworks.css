@@ -1,0 +1,122 @@
+.howitworksSection {
+    display: flex;
+    flex-direction: row; /* Elementos en fila (horizontalmente) */
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 550px;
+    max-height: 550px; /* Altura mínima */
+    padding-top: 70px !important;
+    padding-left: 0%;
+    padding-right: 0%;
+    /*padding: 0 2% ;*/
+    background-color: white;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .howitworksTable {
+  flex: 1; /* Ocupa el 50% del espacio */
+  padding: 10px; /* Añade un poco de margen interno */
+  box-sizing: border-box; /* Para que el padding no desajuste el ancho */
+  max-width: 590px;
+  min-height: 550px;
+  text-align: left;
+  overflow: auto;
+  height: 100%;
+}
+
+.howitworksDiagram {
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: flex-start; /* Pega la imagen arriba */
+  flex: 1;
+  max-width: 590px;
+  min-height: 100%; /* Haz que ocupe todo el alto del contenedor */
+  overflow: hidden; /* Asegura que no haya desplazamiento */
+  background-color: white; /* Fondo blanco por si falta algo */
+}
+
+.howitworksDiagram img {
+  transform: scale(1.2); /* Ampliar al 120% del tamaño original */
+  object-fit: cover; /* Asegura que no haya distorsión */
+}
+
+.howitworksTable {
+  background-color: #f9f9f9; /* Fondo claro para distinguir */
+  
+}
+
+.howitworksDiagram {
+  /*display: flex !important; */
+  justify-content: center !important; 
+  align-items: center !important; 
+  background-color: white;
+  overflow: hidden;
+}
+
+li {
+    margin-bottom: 10px; /* Espaciado entre los puntos */
+    line-height: 1.5; /* Ajusta la altura de línea */
+  }
+
+
+/* Personalizar las pestañas */
+.MuiTabs-root {
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(85, 85, 85, 0.3) !important;
+    width: 100% !important;
+  }
+
+.MuiTab-root.Mui-selected {
+font-weight: bold; /* Negrita en la pestaña activa */
+color: #555 !important; /* Cambiar color de la pestaña activa */
+}
+
+.MuiTab-root {
+font-weight: bold;
+text-transform: none;
+padding: 12px;
+color:#007bffBF !important;
+
+}
+
+.MuiTabs-indicator {
+    background-color: transparent !important; /* Fondo transparente */
+    height: 4px !important; /* Grosor total del indicador */
+    display: flex; /* Para alinear el elemento hijo */
+    justify-content: center; /* Centra el contenido */
+  }
+  
+  .MuiTabs-indicator::after {
+    content: "";
+    background-color: #007bff; /* Color del indicador */
+    height: 100%;
+    width: 30px; /* Ancho más corto */
+    border-radius: 4px; /* Extremos redondeados */
+  }
+
+@media (max-width: 768px) {
+  .howitworksSection {
+    flex-direction: column; /* Cambia a columna vertical */
+    padding: 0 0%;
+    max-height: none;
+  }
+  .howitworksTable {
+    flex: none;
+    width: 100%; 
+    height: auto;
+  }
+
+  .howitworksDiagram {
+    padding-top: 40px;
+    flex: none;
+    width: 100%;
+    min-height: none !important;}
+  }
+  
+  .howitworksDiagram img {
+    transform: scale(1.1); /* Ampliar al 120% del tamaño original */
+    object-fit: cover; /* Asegura que no haya distorsión */
+  }

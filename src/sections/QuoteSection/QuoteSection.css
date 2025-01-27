@@ -1,0 +1,49 @@
+.quote-section-container {
+    width: 100%;
+    /*overflow-x: hidden;*/
+    overflow: hidden;
+    gap: 20px;
+    padding: 20px 20px 20px 30px;
+    
+}
+
+.title-quote-section {
+    margin-top: 30px;
+    padding-top: 30px;
+    font-size: 2rem;
+    color: #555;
+    text-align: center;
+    /*font-weight: bold;*/
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    max-width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  .quote-card {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    min-width: 300px;
+  }
+  
+  @media (min-width: 768px) {
+
+    .quote-section {
+      justify-content: space-between;
+      /*flex-wrap: wrap; /* Distribuye en varias filas si hay espacio */
+
+    }
+  }
+
+  @media (max-width: 500px) {
+ 
+    .title-quote-section{
+      font-size: 1.2rem;
+    }}

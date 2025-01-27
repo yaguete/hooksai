@@ -1,0 +1,48 @@
+.result-buttons {
+  gap: 20px;
+}
+  
+/* Botón con borde */
+#recalculate-button {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  width: 205px;
+  display: flex;
+  border-radius: 100px;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Fondo suave */
+  color: #0096D6;
+  border-color: #0096D6;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  
+#recalculate-button:hover {
+  background-color: #0096D61A;
+  color: #0096D6;
+  /*font-weight: bold;*/
+  border-color: #0096D61A;
+}
+  
+/* Botón sólido */
+#get-trial-button {
+  width: 205px;
+  font-size: 1.2rem;
+  margin-top: 30px !important;
+  padding: 10px 12px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 100px;;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#get-trial-button:hover {
+  background-color: #0056b3;
+}
+

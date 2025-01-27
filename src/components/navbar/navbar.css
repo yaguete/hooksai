@@ -1,0 +1,73 @@
+.Navbar {
+    background-color: #E6F5FB;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 1100;
+  }
+  
+  .navbar-logo {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-spacing {
+    margin-top: 64px; /* Espaciado para el contenido */
+  }
+  
+  .button-contained {
+    background-color: #d6e9f9;
+  }
+
+  .navbar-button {
+    width: 78px;
+    display: flex;
+    border-radius: 20px;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background-color: rgba(101, 85, 143, 0.12); /* Fondo suave */
+    color: #1a237e; /* Texto morado oscuro */
+    border: none; /* Sin borde */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-button:hover {
+    background-color: #b3d4f7; /* Fondo más oscuro al pasar el mouse */
+  }
+  
+  .navbar-button.text {
+    background-color: transparent; /* Fondo transparente */
+    color: inherit;
+    font-weight: 300;
+  }
+  
+  .navbar-button.text:hover {
+    background-color: rgba(0, 0, 0, 0.04); /* Fondo ligeramente gris */
+  }
+
+/* Botones del Drawer */
+.navbar-button-drawer {
+    border-radius: 20px !important;
+    background-color: #eceaf1; 
+    border: 1px solid #dfdfdf;
+    color: #1a237e; /* Texto en color oscuro */
+    padding: 10px 16px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Botones "text" del Drawer */
+.navbar-button-drawer.text {
+    background-color: white; /* Fondo blanco (específico para text) */
+    color: #1a237e;
+    font-weight: 300;
+    box-shadow: none;
+    border: 1px solid #dfdfdf;}
